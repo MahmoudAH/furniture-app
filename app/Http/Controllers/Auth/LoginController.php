@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Spatie\Permission\Models\Role;
+use Spatie\Permission\Models\Permission;
 
 class LoginController extends Controller
 {
@@ -25,6 +27,12 @@ class LoginController extends Controller
      *
      * @var string
      */
+    protected function authenticated()
+    {
+       if ( auth()->user()->hasRole('admin|creator|editor') ) {// do your margic here
+        return redirect()->route('admin');
+       }
+    }
     protected $redirectTo = '/home';
 
     /**

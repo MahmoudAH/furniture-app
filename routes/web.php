@@ -32,3 +32,15 @@ Route::get('contact', function () {
 Route::get('services/تغليف الاثاث' , 'HomeController@service1')->name('service1');
 Route::get('services/نقل الاثاث' , 'HomeController@service2')->name('service2');
 Route::get('services/فك وتركيب الاثاث' , 'HomeController@service3')->name('service3');
+Route::group(['middleware' => 'auth'], function () {
+   Route::get('admin', 'AdminController@index')->name('admin')->middleware('role:admin|editor|creator');
+   Route::resource('users', 'UserController');
+   Route::resource('permissions', 'PermissionController');
+   Route::resource('posts', 'PostController');
+   Route::resource('roles', 'RoleController');
+});
+/*
+Route::group(['middleware' => ['role:admin']], function () {
+    Route::resource('roles', 'RoleController', ['except' => 'index']);
+
+});

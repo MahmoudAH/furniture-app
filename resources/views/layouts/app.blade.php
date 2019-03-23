@@ -98,7 +98,11 @@
                       <li class="nav-item">
                         <a class="nav-link {{ Request::is('contact') ? 'active' : '' }}" href="{{ url('contact') }}">اتصل بنا </a>
                       </li>
-
+                      @role('admin|editor|creator')
+                      <li class="nav-item">
+                        <a class="nav-link {{ Request::is('admin') ? 'active' : '' }}" href="{{ route('admin') }}"> لوحه التحكم  </a>
+                      </li>
+                      @endrole
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -106,7 +110,7 @@
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link btn btn-info" href="{{ route('login') }}"><i class="fa fa-sign-out" aria-hidden="true"></i> تسجيل دخول 
+                                <a class="nav-link btn btn-info" href="{{ route('login') }}"><i class="fa fa-sign-out" aria-hidden="true"></i> تسجيل دخول
                                            </a>
                             </li>
                             @if (Route::has('register'))
