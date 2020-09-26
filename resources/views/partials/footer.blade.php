@@ -1,5 +1,5 @@
 <!-- Footer -->
-<footer class="page-footer font-small mdb-color pt-4" style="text-align:right;direction:rtl;margin-top: 50px">
+<footer class="page-footer font-small mdb-color pt-4" style="text-align:right;direction:rtl;margin-top: 50px;">
 
 <!-- Footer Links -->
 <div class="container text-center text-md-left">
@@ -10,9 +10,14 @@
  <!-- Grid column -->
  <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
    <h6 class="text-uppercase mb-4 font-weight-bold">من نحن</h6>
-   <p>
-مرحبا بكم فى موقع شركتنا الامانة لنقل و تخزين الاثاث اذا كنت تبحث عن الدقه و الامان فى نقل اثاث منزلك فنحن نقدم لك العديد من الخدمات لنقل و تغليف الاثاث و لدينا احدث الوسائل لنقل الاثاث و عماله مدربه ذو خبره و كفاءه عاليه فى تغليف و فك و تركيب الاثاث و نسعى دايما لتطوير خدمتنا لارضاء العميل و من اجل راحته ,ونحن من اقدم شركات نقل الاثاث بالقاهرة ولدينا خبرة  </p>
- </div>
+   <p style="font-size: 15px;
+      line-height: 28px;
+      margin-bottom: 1em;
+     font-weight: 10;">
+   أهلا ومرحبا بك عزيزي العميل في مكانك المميز شركه المارد لنقل وتغليف الأثاث والبضائع نحن من اوئل شركات نقل الأثاث في مصر لدينا خبره متقدمه في عالم نقل الأثاث المنزلي والفندقي و التجاري بكل عنايه وحرفه لعملائنا الكرام بستخدم أحدث الآليات في النقل لضمان أمان خدمه النقل في أقل وقت وأقل تكاليف وتوفير الوقت والمجهود. 
+
+   </p>
+  </div>
  <!-- Grid column -->
 
  <hr class="w-100 clearfix d-md-none">
@@ -20,17 +25,29 @@
  <!-- Grid column -->
  <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
    <h6 class="text-uppercase mb-4 font-weight-bold">خدماتنا</h6>
-   <p>
+   <p style="font-size: 15px;
+      line-height: 28px;
+      margin-bottom: 1em;
+      font-weight: 10;">
      <a href="#!">فك وتركيب الاثاث</a>
    </p>
-   <p>
-     <a href="#!">فك وتركيب الاثاث</a>
+   <p style="font-size: 15px;
+      line-height: 28px;
+      margin-bottom: 1em;
+     font-weight: 10;">
+     <a href="#!">تغليف الاثاث</a>
    </p>
-   <p>
-     <a href="#!">فك وتركيب الاثاث</a>
+   <p style="font-size: 15px;
+      line-height: 28px;
+      margin-bottom: 1em;
+      font-weight: 10;">
+     <a href="#!">نقل الاثاث</a>
    </p>
-   <p>
-     <a href="#!">فك وتركيب الاثاث</a>
+   <p style="font-size: 15px;
+      line-height: 28px;
+      margin-bottom: 1em;
+      font-weight: 10;">
+     <a href="#!">ونش رفع الاثاث</a>
    </p>
  </div>
  <!-- Grid column -->
@@ -39,19 +56,14 @@
 
  <!-- Grid column -->
  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-   <h6 class="text-uppercase mb-4 font-weight-bold">منتجاتنا</h6>
-   <p>
-     <a href="#!">فك وتركيب الاثاث</a>
+   <h6 class="text-uppercase mb-4 font-weight-bold">مميزاتنا</h6>
+   <p style="font-size: 15px;
+      line-height: 28px;
+      margin-bottom: 1em;
+      font-weight: 10;">
+   تقوم شركه المارد لنقل الأثاث على نقل الأثاث في أقل وقت ممكن وفي أسرع وقت لتوفر الجهد والإرهاق حيث نتميز بأرقى أساليب التعامل مع الأثاث بأحدث طوق النقل وأحدث المعدات لعدم وقوع اي ضرر به. 
    </p>
-   <p>
-     <a href="#!">فك وتركيب الاثاث</a>
-   </p>
-   <p>
-     <a href="#!">فك وتركيب الاثاث</a>
-   </p>
-   <p>
-     <a href="#!">فك وتركيب الاثاث</a>
-   </p>
+   
  </div>
 
  <!-- Grid column -->
@@ -60,14 +72,26 @@
  <!-- Grid column -->
  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
    <h6 class="text-uppercase mb-4 font-weight-bold">اتصل بنا </h6>
-   <p>
-     <i class="fa fa-home ml-3"></i> مصر الجديده, NY 10012, US</p>
-   <p>
-     <i class="fa fa-envelope ml-3"></i> info@gmail.com</p>
-   <p>
-     <i class="fa fa-phone ml-3"></i> + 01 234 567 88</p>
-   <p>
-     <i class="fa fa-print ml-3"></i> + 01 234 567 89</p>
+   <p style="font-size: 15px;
+      line-height: 28px;
+      margin-bottom: 1em;
+      font-weight: 10;">
+     <i class="fa fa-home ml-3"></i> مصر الجديده , ميدان الجيش</p>
+     <p style="font-size: 15px;
+      line-height: 28px;
+      margin-bottom: 1em;
+      font-weight: 10;">
+     <i class="fa fa-envelope ml-3"></i>khaledahmed24680@gmail.com</p>
+     <p style="font-size: 15px;
+      line-height: 28px;
+      margin-bottom: 1em;
+      font-weight: 10;">
+     <i class="fa fa-phone ml-3" ></i><a href="tel: 01097060751" ><span style="direction:ltr"> 01097060751 </span></a> </p>
+     <p style="font-size: 15px;
+      line-height: 28px;
+      margin-bottom: 1em;
+      font-weight: 10;">
+     <i class="fa fa-print ml-3"></i> <a href="tel: 01202750832" ><span style="direction:ltr"> 01202750832 </span></a> </p>
  </div>
  <!-- Grid column -->
 
@@ -83,9 +107,13 @@
  <div class="col-md-7 col-lg-8">
 
    <!--Copyright-->
-   <p class="text-center text-md-left">© 2018 حقوق النشر:
+   <p class="text-center text-md-left" style="font-size: 15px;
+      line-height: 28px;
+      margin-bottom: 1em;
+      font-weight: 10;">
+      © 2018 حقوق النشر:
      <a href="https://mdbootstrap.com/education/bootstrap/">
-       <strong> الفرسان لنقل الاثاث </strong>
+       <strong> المارد لنقل الاثاث </strong>
      </a>
    </p>
 
@@ -99,7 +127,7 @@
    <div class="text-center text-md-right">
      <ul class="list-unstyled list-inline">
        <li class="list-inline-item">
-         <a class="btn-floating btn-sm rgba-white-slight mx-1">
+         <a class="btn-floating btn-sm rgba-white-slight mx-1" href="https://www.facebook.com/شركة-المارد-لنقل-الأثاث-107989457719517/">
            <i class="fa fa-facebook"></i>
 
          </a>

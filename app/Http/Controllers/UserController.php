@@ -25,11 +25,11 @@ class UserController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
+    {/*
         if(!auth()->user()->hasRole('admin|creator|editor'))
         {
           return back()->with('message','Access Denied For That Action');
-        }
+        }*/
         
         $users = User::all();
 

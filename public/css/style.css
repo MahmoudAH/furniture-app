@@ -4,15 +4,18 @@ h4, h5, h6, h1, h2, h3 {
 ul, ol {
 	margin: 0;
 }
-p {
+p,span {
 	margin: 0;
 	font-weight: 300;
+	
+    
 }
 html, body {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 100%;
 	background-color: #FFF;
 	color: #777;
+	
 }
 body a {
 	transition: 0.5s all;
@@ -200,16 +203,16 @@ body a {
 	background: #2ABB9B;
 }
 .feature_grid1 {
-	width: 23.5%;
+	width: 33.5%;
 /*	margin-left: 2em;*/
 	border-left: 1px solid #5fccb4;
 	padding: 4em 0;
 
-}
+}/*
 .feature_grid2 {
 	width: 21%;
 	padding: 4em 2em 4em 0;
-}
+}*/
 .feature_grid1 .fa, .feature_grid2 .fa {
 	color: #e5e52d;
 }
@@ -232,6 +235,8 @@ p.m_2 {
 	line-height: 1.5em;
 	margin-bottom: 1em;
 	font-weight: 300;
+	padding:10px;
+	
 }
 .banner_btn {
 	display: inline-block;
@@ -261,7 +266,7 @@ p.m_2 {
 	font-weight: 500;
 	text-decoration: none;
 	outline: none;
-	margin-top: 10px;
+	margin-top: 30px;
 	border-radius: 5px;
 }
 .feature_btn:hover {
@@ -619,6 +624,7 @@ a.social-icon:hover, a.social-icon:active, a.social-icon:focus {
 .feature_grid1 {
 	width: 23%;
 }
+
 .banner {
 	min-height: 450px;
 }
@@ -633,6 +639,16 @@ a.social-icon:hover, a.social-icon:active, a.social-icon:focus {
 }
 .nbs-flexisel-nav-left, .nbs-flexisel-nav-right {
 	margin-top: -7.6em;
+}
+
+}
+@media (min-width:1024px) {
+.navbar-brand{
+	margin-right:100px
+}
+.nav-item{
+	margin:0px;
+	padding:2px
 }
 }
 
