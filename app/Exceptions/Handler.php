@@ -2,59 +2,32 @@
 
 namespace App\Exceptions;
 
-use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Spatie\Permission\Exceptions\UnauthorizedException as SpatieUnauthorized;
+use Throwable;
 
 class Handler extends ExceptionHandler
 {
-    /**
-     * A list of the exception types that are not reported.
-     *
-     * @var array
-     */
-    protected $dontReport = [
-        //
-    ];
+    /** @var array<class-string<Throwable>, \Psr\Log\LogLevel::*> */
+    protected $levels = [];
 
-    /**
-     * A list of the inputs that are never flashed for validation exceptions.
-     *
-     * @var array
-     */
+    /** @var array<int, class-string<Throwable>> */
+    protected $dontReport = [];
+
+    /** @var array<int, string> */
     protected $dontFlash = [
+        'current_password',
         'password',
         'password_confirmation',
     ];
 
-    /**
-     * Report or log an exception.
-     *
-     * @param  \Exception  $exception
-     * @return void
-     */
-    public function report(Exception $exception)
+    public function register(): void
     {
-        parent::report($exception);
-    }
+        // Your custom view for Spatie unauthorized
+        $this->renderable(function (SpatieUnauthorized $e, $request) {
+            return response()->view('exception', [], 500);
+        });
 
-    /**
-     * Render an exception into an HTTP response.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \Exception  $exception
-     * @return \Illuminate\Http\Response
-     *//*
-    public function render($request, Exception $exception)
-    {
-        return parent::render($request, $exception);
-    }*/
-    
-    public function render($request, Exception $exception)
-   {
-    if ($exception instanceof \Spatie\Permission\Exceptions\UnauthorizedException) {
-        return response()->view('exception', [], 500);
+        // $this->reportable(function (Throwable $e) {});
     }
- 
-    return parent::render($request, $exception);
-   }
 }
